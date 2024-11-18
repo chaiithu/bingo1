@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('git scm') {
             steps {
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-cred', url: 'https://github.com/chaiithu/sonarqube.git']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-cred', url: 'https://github.com/chaiithu/bingo1.git']])
                 }
            }
            stage ('sonarqube analysis') {
